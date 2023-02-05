@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(images/bongy.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .headertext {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0px;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.495);
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        .header {
+            top: 10px;
+            left: 455px;
+            box-sizing: border-box;
+            width: 40%;
+            margin-top: 100px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2.5px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            font-size: 25px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            height: 75px;
+
+        }
+
+        .container {
+            width: 100%;
+            margin: 100px 0px 100px 0px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 2px;
+            box-sizing: border-box;
+            display: inline-block;
+            width: 33%;
+            height: 850px;
+            font-size: 20px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.750);
+        }
+
+
+
+        .boxheader {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 40px;
+        }
+
+        .boxtext {
+            padding: 5%;
+        }
+
+        .link {
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            display: inline-block;
+            margin-left: 25%;
+            margin-bottom: 5%;
+            font-size: 13px;
+            color: rgb(0, 82, 130);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .link:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        .picbtn {
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+            text-align: center;
+            text-decoration: none;
+            font-size: 13px;
+            display: inline-block;
+            height: 20px;
+            width: 140px;
+            background-color: rgba(189, 189, 189, 0.626);
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            margin-right: 20%;
+            margin-bottom: 5%;
+            transition: all 0.2s ease-in-out;
+            color: black;
+
+        }
+
+
+
+        .picbtn:hover {
+            background-color: azure;
+            cursor: pointer;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        #contactme {
+            z-index: 1;
+            text-decoration: none;
+            text-align: center;
+            position: fixed;
+            bottom: 30px;
+            right: 50px;
+            background-color: black;
+            color: white;
+            height: 20px;
+            width: 85px;
+            border-radius: 20px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        #contactme:hover {
+            transform: scale(1.05);
+        }
+
+        #cqlogo {
+            height: 50px;
+            width: 200px;
+            border-radius: 5px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        #cqlogo:hover {
+            transform: scale(1.05);
+        }
+
+        .kgplogoimg {
+            height: 100%;
+            width: 50px;
+            margin-left: 328px;
+            border-radius: 30px;
+            margin-right: 100px;
+        }
+
+        #aboutme {
+            height: 50px;
+            width: 200px;
+            background-color: white;
+        }
+
+        .image {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width: 75%;
+            height: 35%;
+            border-radius: 5px;
+        }
+
+        .cqlogosmolimg {
+            height: 100%;
+            width: 45px;
+            right: 20px;
+            border-radius: 10px;
+            margin-left: 100px;
+            margin-right: 0px;
+
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            height: 100px;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .footerbox {
+            box-sizing: border-box;
+            width: 33%;
+            height: 100%;
+            text-align: center;
+        }
+
+        #footermid {
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 22px;
+            text-decoration: none;
+            color: black;
+            height: 50px;
+            width: 200px;
+            background-color: white;
+            border-radius: 5px;
+            padding-top: 10px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        #footermid:hover {
+            transform: scale(1.05);
+        }
+
+        .navboi {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            height: 30px;
+            width: 70px;
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            justify-items: center;
+            text-align: center;
+            margin: 10px 100px;
+            padding-top: 6px;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+
+        }
+
+        .navboi:hover {
+            background-color: darkgray;
+            cursor: pointer;
+        }
+
+        #footerright {
+            box-sizing: border-box;
+            width: 33%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .logobox {
+            box-sizing: border-box;
+            height: 50px;
+            width: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #image1 {
+            height: 22%;
+        }
+
+        #image2 {
+            height: 40%;
+            width: 50%;
+        }
+
+        #image3 {
+            height: 25%;
+        }
+
+        .logoimg {
+            height: 100%;
+            width: 100%;
+            transition: all 0.2s ease-in-out;
+            z-index: 0;
+        }
+
+        .logoimg:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" id="mainnav"><a href="http://www.iitkgp.ac.in/" class="kgplogo" target="_blank"><img
+                src="images/kgplogo.jpeg" alt="" class="kgplogoimg"></a>
+        <a href="task1.html" class="navboi" id="home">Home</a>
+        <a href="photogallery.html" class="navboi" id="gallery">Gallery</a><a href="http://www.cqiitkgp.com/"
+            class="cqlogosmol" target="_blank"><img src="images/cqlogosmol.png" alt="" class="cqlogosmolimg"></a>
+    </div>
+
+    <div class="header" id="mainheader">
+        <div class="headertext" id="mainheader">KGP Diaries</div>
+    </div>
+    <div class="container" id="maincontiner">
+        <div class="box" id="box1">
+            <div class="boxheader" id="boxheader1">
+                Bidhan Chowk
+            </div>
+            <img src="images/bidhanchowk.jpg" alt="" class="image" id="image1">
+            <div class="boxtext" id="boxtext1">Bidhan Chowk is the roundabout in front of the main building at IIT
+                Kharagpur. The picturesque grassy patch serves as a rendezvous for students and a location for them to
+                gather. It also serves the purpose of a picture spot for people as it offers a beautiful frontal view of
+                the main building. In the middle, adorned by the bust of Bidhan Chandra Roy is the eponymous chowk,
+                reminding the visitors of the legacy of one of the most important people in IIT Kharagpur's creation.
+            </div>
+            <br>
+            <a class="link" href="http://www.iitkgp.ac.in/" target="_blank">Go to website</a>
+            <a href="bidhanchowkmediagallery.html" class="picbtn" id="picbtn1">Go to gallery</a>
+
+        </div>
+        <div class="box" id="box2">
+            <div class="boxheader" id="boxheader2">
+                Nehru Museum
+            </div>
+            <img src="images/nehrumuseum.jpeg" alt="" class="image" id="image2">
+            <div class="boxtext" id="boxtext2">Nehru Museum is the old building of the campus that was built during the
+                times of the British Raj. In its long and illustrous history it has seen use as a detention camp for
+                Indian freedom fighters and later as an air force atation for the Americans during the second world war.
+                It housed the IIT during its formative years and later it was abandoned but kept in good shape by
+                maintainance. Today, it has been converted into a museum where exhibits of various scientific diciplines
+                are shown.</div>
+            <br>
+            <a class="link" href="https://www.nehrumuseumiitkgp.org/" target="_blank">Go to website</a>
+            <a href="nehrumuseummediagallery.html" class="picbtn" id="picbtn2">Go to gallery</a>
+        </div>
+        <div class="box" id="box3">
+            <div class="boxheader" id="boxheader3">
+                ECE Garden
+            </div>
+            <img src="images/ecegardenog.jpg" alt="" class="image" id="image3">
+            <div class="boxtext" id="boxtext3">It is the garden in front of the Electronics and Electrical Communication Engineering Department, beside the main building and off the road leading to the various other departments. The place is granted shade and beauty by a banyan tree in its midst and also has different plants in it which are all well maintained. It is a good spot for people to gather and seek shade and peace. </div>
+            <br>
+            <a class="link" href="http://www.ecdept.iitkgp.ac.in/" target="_blank">Go to website</a>
+            <a href="ecedeptmediagallery.html" class="picbtn" id="picbtn3">Go to gallery</a>
+        </div>
+    </div>
+    <a class="left" id="contactme" href="task1.html">Refresh</a>
+    <div class="footer" id="mainfooter">
+        <div class="footerbox" id="footerleft"><a href="http://www.cqiitkgp.com/" target="_blank"><img
+                    src="images/cqlogo.png" alt="" id="cqlogo"></a></div>
+        <a href="aboutme.html" class="footerbox" id="footermid">
+            About Me
+        </a>
+        <div class="footerbox" id="footerright"><a href="https://www.facebook.com/profile.php?id=100086966500951"
+                class="logobox" id="fblogo" target="_blank"><img src="images/fblogo.png" alt="" class="logoimg"
+                    id="fblogoimg"></a><a href="https://www.instagram.com/ahwabanmukherjee/" class="logobox"
+                id="instalogo" target="_blank"><img src="images/iglogo.png" alt="" class="logoimg"
+                    id="instalogoimg"></a><a href="https://www.linkedin.com/in/ahwaban-mukherjee-11a5b6112/"
+                class="logobox" id="lkdnlogo" target="_blank"><img src="images/lkdnlogo.png" alt="" class="logoimg"
+                    id="lkdnlogoimg"></a></div>
+    </div>
+</body>
+
+</html>

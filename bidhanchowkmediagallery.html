@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+
+        .headertext {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0px;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.495);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .cqlogosmolimg {
+            height: 100%;
+            width: 45px;
+            right: 20px;
+            border-radius: 10px;
+            margin-left: 100px;
+            margin-right: 0px;
+
+        }
+
+        .kgplogoimg {
+            height: 100%;
+            width: 50px;
+            margin-left: 328px;
+            border-radius: 30px;
+            margin-right: 100px;
+        }
+
+        .navboi {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            height: 30px;
+            width: 70px;
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            justify-items: center;
+            text-align: center;
+            margin: 10px 100px;
+            padding-top: 6px;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+
+        }
+
+        .navboi:hover {
+            background-color: darkgray;
+            cursor: pointer;
+        }
+
+
+        .header {
+            top: 10px;
+            left: 455px;
+            box-sizing: border-box;
+            width: 40%;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2.5px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            font-size: 25px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            height: 75px;
+
+        }
+
+        .container {
+            width: 100%;
+            height: 270px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .imageup {
+            height: 90%;
+            width: 400px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+            display: inline-block;
+        }
+
+        .imagedn {
+            height: 90%;
+            width: 400px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+            display: inline-block;
+        }
+
+        #image1 {
+            width: 500px;
+        }
+
+        #image2 {
+            width: 130px;
+            height: 100%;
+            margin-left: 180px;
+        }
+
+        #image3 {
+            width: 170px;
+            margin-left: 180px;
+        }
+
+        #image4 {
+            height: 60%;
+            margin-top: 50px;
+        }
+
+        #image5 {
+            margin-top: 30px;
+        }
+
+        #image6 {
+            width: auto;
+            margin-left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" id="mainnav"><a href="http://www.iitkgp.ac.in/" class="kgplogo" target="_blank"><img
+                src="images/kgplogo.jpeg" alt="" class="kgplogoimg"></a>
+        <a href="task1.html" class="navboi" id="home">Home</a>
+        <a href="photogallery.html" class="navboi" id="gallery">Gallery</a><a href="http://www.cqiitkgp.com/"
+            class="cqlogosmol" target="_blank"><img src="images/cqlogosmol.png" alt="" class="cqlogosmolimg"></a>
+    </div>
+
+    <div class="header" id="mainheader">
+        <div class="headertext" id="mainheader">Bidhan Chowk</div>
+    </div>
+    <div class="container" id="container1"><img src="images/bidhanchowk.jpg" alt="" class="imageup" id="image1"><img
+            src="images/bidhanchowkfamily.jpg" alt="" class="imageup" id="image2"><img src="images/bidhanchowknight.jpg"
+            alt="" class="imageup" id="image3"></div>
+    <div class="container" id="container2"><img src="images/bongy.jpg" alt="" class="imagedn" id="image4"><img
+            src="images/iitkgpmainbuilding.jpeg" alt="" class="imagedn" id="image5"><img src="images/mainbuilding.jpg"
+            alt="" class="imagedn" id="image6"></div>
+</body>
+
+</html>

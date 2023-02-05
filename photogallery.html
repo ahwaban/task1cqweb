@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+
+        .cqlogosmolimg {
+            height: 100%;
+            width: 45px;
+            right: 20px;
+            border-radius: 10px;
+            margin-left: 100px;
+            margin-right: 0px;
+
+        }
+
+
+        .header {
+            font-family: 'Times New Roman', Times, serif;
+            width: 100%;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            color: black;
+            font-size: 40px;
+            text-align: center;
+        }
+
+
+        .navbar {
+            position: fixed;
+            top: 0px;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.495);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .kgplogoimg {
+            height: 100%;
+            width: 50px;
+            margin-left: 328px;
+            border-radius: 30px;
+            margin-right: 100px;
+        }
+
+        .navboi {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            height: 30px;
+            width: 70px;
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            justify-items: center;
+            text-align: center;
+            margin: 10px 100px;
+            padding-top: 6px;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+
+        }
+
+        .navboi:hover {
+            background-color: darkgray;
+            cursor: pointer;
+        }
+
+        .cqlogosmolimg {
+            height: 100%;
+            width: 45px;
+            right: 20px;
+            border-radius: 10px;
+            margin-left: 100px;
+
+        }
+
+        .container {
+            padding-left: 18px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            background-color: rgb(221, 122, 0);
+            border-radius: 10px;
+            height: 400px;
+            margin: 5px;
+            width: 24%;
+            text-align: center;
+        }
+
+        .gallerybtn {
+            box-sizing: border-box;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            display: inline-block;
+            height: 20px;
+            width: 140px;
+            background-color: rgba(189, 189, 189, 0.626);
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            transition: all 0.2s ease-in-out;
+            color: black;
+
+        }
+
+
+
+        .gallerybtn:hover {
+            background-color: azure;
+            cursor: pointer;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        .sampleimg {
+            margin-top: 10px;
+            display: block;
+            border-radius: 8px;
+            width: 75%;
+            height: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .headertext {
+            font-size: 25px;
+        }
+
+        #imgbc {
+            width: 40%;
+            height: 75%;
+        }
+
+        #imgnm {
+            width: 60%;
+            height: 75%;
+        }
+
+        #imgec {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 80%;
+            height: 40%;
+        }
+
+        #imgot {
+            margin-top: 50px;
+            height: 45%;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" id="mainnav"><a href="www.iitkgp.ac.in" class="kgplogo" target="_blank"><img src="images/kgplogo.jpeg"
+                alt="" class="kgplogoimg"></a>
+        <a href="task1.html" class="navboi" id="home">Home</a>
+        <a href="photogallery.html" class="navboi" id="gallery" target="_blank">Gallery</a><a href="www.cqiitkgp.com"
+            class="cqlogosmol" target="_blank"><img src="images/cqlogosmol.png" alt="" class="cqlogosmolimg"></a>
+    </div>
+    <div class="header" id="mainheader">Photo Gallery</div>
+    <div class="container" id="maincontainer">
+        <div class="box" id="box1">
+            <div class="headertext" id="header1">Bidhan Chowk</div><img src="images/bidhanchowkfamily.jpg" alt=""
+                class="sampleimg" id="imgbc"><a href="bidhanchowkmediagallery.html" class="gallerybtn"
+                id="gallerybtncl">Go to Gallery</a>
+        </div>
+        <div class="box" id="box2">
+            <div class="headertext" id="header1">Nehru Museum</div><img src="images/nehrumuseum.jpeg" alt="" class="sampleimg"
+                id="imgnm"><a href="nehrumuseummediagallery.html" class="gallerybtn" id="gallerybtnnm">Go to Gallery</a>
+        </div>
+        <div class="box" id="box3">
+            <div class="headertext" id="header1">ECE Garden</div><img src="images/ecegardennew.jpg" alt="" class="sampleimg"
+                id="imgec"><a href="ecedeptmediagallery.html" class="gallerybtn" id="gallerybtneg">Go
+                to Gallery</a>
+        </div>
+        <div class="box" id="box4">
+            <div class="headertext" id="header1">Other Places in KGP</div><img src="images/iitkgpmainbuilding.jpeg" alt=""
+                class="sampleimg" id="imgot"><a href="randomgallery.html" class="gallerybtn" id="gallerybtnot">Go to
+                Gallery</a>
+        </div>
+    </div>
+</body>
+
+</html>
